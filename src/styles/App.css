@@ -1,1 +1,18 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
 
+    width: 50%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+.Todos{
+    display: flex;
+    width: 60%;
+
+    align-items: center;
+    justify-content: space-between;
+    
+}
