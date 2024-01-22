@@ -28,9 +28,11 @@ const App = () => {
       <div>
       <input type="text" value={input}  onChange={(e)=>setInput(e.target.value)}/>
       <button onClick={handleTodo}>Add Todo</button> </div>
+        <ul>
       {todos&& todos.length>0 && todos.map((todo,index)=>{
-        return <div className="Todos" key={index}><p>{todo}</p> <button onClick={()=>handleDelete(index)}>delete</button></div>
+        return <li className="Todos" key={index}><p>{todo}</p> <button onClick={()=>handleDelete(index)}>delete</button></li>
       })}
+      </ul>
     </div>
   )
 }
